@@ -1,9 +1,13 @@
 # Ignore everything
 *
+!*/*
 
 # Whitelist important files and directories
 !/.gitignore
-!*/src/
+!/src/
+!/src/*/*
+!/static
+!/static/*/*
 !/public/
 !/package.json
 !/svelte.config.js
@@ -14,8 +18,8 @@
 !/static/  # if using static files in SvelteKit
 
 # Keep specific files inside src and public directories
-/src/**
-/public/**
+# /src/**
+# /public/**
 
 # Ignore node_modules and build output
 */node_modules/
